@@ -1,0 +1,106 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 62.5%;
+
+  background: linear-gradient(hsl(221, 39%, 11%), hsl(274, 66%, 32%), hsl(262, 83%, 58%));
+  color: hsl(0, 0%, 100%);
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.contact {
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 3rem;
+  border-radius: .6rem;
+  display: flex;
+  align-items: center;
+}
+
+.portrait {
+  display: inline-block;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 100%;
+  overflow: hidden;
+  margin-right: 2rem;
+}
+
+.portrait-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.role {
+  font-size: 2rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.location {
+  display: inline-block;
+}
+
+.description {
+  margin-top: 1.5rem;
+}
+
+.list {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  padding-inline: 5rem;
+}
+
+.list-item-link svg {
+  color:hsl(0, 0%, 100%);
+}
+
+@media screen and (max-width: 530px) {
+  .contact {
+    flex-direction: column;
+  }
+
+  .portrait {
+    margin-bottom: 2rem;
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .name {
+    font-size: 2.5rem;
+  }
+
+  .role {
+    font-size: 1.8rem;
+  }
+
+  .location {
+    font-size: 1.4rem;
+  }
+
+  .description {
+    font-size: 1.4rem;
+  }
+}
